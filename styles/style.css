@@ -1,0 +1,23 @@
+/*RESETS*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+
+  font-size: 1rem;
+  font-family: sans-serif;
+  /*background: red;*/
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
