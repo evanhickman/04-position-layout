@@ -18,3 +18,16 @@ ul {
 img {
   max-width: 100%;
 }
+
+/* CONTENT */
+
+.section {
+  padding: 2rem;
+}
+
+.section__bg-pic {
+  min-height: 100vh;
+  background: url('http://www.publicdomainpictures.net/pictures/70000/velka/old-white-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
