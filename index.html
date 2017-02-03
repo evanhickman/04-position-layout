@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="`https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css`">
-  </head>
-  <body>
-    <main class="section section__bg-pic">
 
-      <!-- HUD ICONS
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="`https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css`">
+</head>
+
+<body>
+  <main class="section section__bg-pic">
+
+    <!-- HUD ICONS
       ////////////////// -->
 
-      <div class="next-to">
+    <div class="next-to">
+      <div class="next-to__left">
         <div class="next-to__item">
           <img src="https://hydra-media.cursecdn.com/overwatch.gamepedia.com/f/f5/Zenyatta_portrait.png?version=ba440f2a2207e6ce2c04ac6afff32204" alt="Zenyatta avatar" class="avatar">
         </div>
@@ -21,6 +24,29 @@
           <img src="http://www.placecage.com/140/100" alt="nic admiring his wife" class="health">
         </div>
       </div>
-    </main>
-  </body>
+      <div class="next-to__right">
+        <div class="next-to__item">
+          <p class="ammo">99/100</p>
+          <img src="https://hydra-media.cursecdn.com/overwatch.gamepedia.com/thumb/3/38/Ability-genji4.png/100px-Ability-genji4.png?version=67084b8ed722247255345738f0967466" alt="special move icon" class="special-move">
+          <img src="https://hydra-media.cursecdn.com/overwatch.gamepedia.com/thumb/7/70/Ability-genji2.png/100px-Ability-genji2.png?version=2d4c8085ff5161fd79147d819aca2223" alt="special move key binding icon" class="special-move__key">
+          <img src="http://www.placecage.com/140/100" alt="nic derpin" class="weapon">
+        </div>
+      </div>
+    </div>
+
+      <!-- ELIMINATION STATS
+        //////////////////////// -->
+
+      <div class="v-stack">
+        <div class="elimination-image">
+          <img src="http://www.drodd.com/images15/skull10.png" alt="elimiation skull" class="elimiation-skull" height="50rem" width="50rem">
+        </div>
+        <p class="elimination-stats">
+          <em>ELIMINATED <span class="victim">NIC</span></em>
+        </p>
+      </div>
+
+  </main>
+</body>
+
 </html>

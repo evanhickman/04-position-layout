@@ -22,7 +22,7 @@ img {
 /* CONTENT */
 
 .section {
-  padding: 2rem;
+  /*padding: 1rem;*/
 }
 
 .section__bg-pic {
@@ -30,4 +30,48 @@ img {
   background: url('http://www.publicdomainpictures.net/pictures/70000/velka/old-white-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*COMPONENTS*/
+
+.next-to {
+  overflow: auto;
+  width: 100vw;
+  position: fixed;
+  bottom: 2rem;
+  padding: 0 2rem;
+
+  /*background: red;*/
+}
+
+.next-to__left .next-to__item {
+  float: left;
+  /*background: green;*/
+}
+
+.next-to__right .next-to__item {
+  float: right;
+  /*background: green;*/
+}
+
+.health-number {
+  padding-top: 5rem;
+
+  /*background: green;*/
+}
+
+.avatar {
+  max-height: 30rem;
+}
+
+.health {
+  height: 2rem;
+  width: 8rem;
+  /*background: green;*/
+}
+
+.ammo {
+  text-align: right;
+  display: block;
+  /*background: green;*/
 }
