@@ -6,7 +6,7 @@ body {
   margin: 0;
 
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   /*background: red;*/
 }
 
@@ -28,53 +28,106 @@ img {
 .section__bg-pic {
   height: 100vh;
   width: 100vw;
-  background: url('http://www.publicdomainpictures.net/pictures/70000/velka/old-white-background.jpg');
+  background: url('https://i.ytimg.com/vi/O161-WNZBP4/maxresdefault.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 /*COMPONENTS*/
 
-.next-to {
+.spread {
+  display: inline-block;
   overflow: auto;
   width: 100vw;
   position: fixed;
   bottom: 2rem;
   padding: 0 2rem;
 
-  /*background: red;*/
+  background: red;
 }
 
-.next-to__left .next-to__item {
-  float: left;
-  /*background: green;*/
+.spread__left {
+  display: inline-block;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+
+  /*background: blue;*/
 }
 
-.next-to__right .next-to__item {
-  float: right;
-  /*background: green;*/
+.spread__right {
+  display: inline-block;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  background: green;
 }
 
-.health-number {
-  padding-top: 5rem;
+.next-to {
+  overflow: auto;
+}
 
-  /*background: green;*/
+.next-to__item {
+  display: inline-block;
+  /*background: yellow;*/
 }
 
 .avatar {
-  max-height: 30rem;
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
 }
 
-.health {
-  height: 2rem;
-  width: 8rem;
-  /*background: green;*/
+.next-to__item--health {
+  display: inline-block;
+  margin-left: 0.3rem;
+  /*margin-top: 4rem;*/
+
+  /*background: blue;*/
+}
+
+.health-bar {
+  overflow: auto;
+  padding-bottom: 0.3rem;
+  padding-right: 0.3rem;
+  margin-top: 0.5rem;
+
+  border-right: medium #4c7af1 solid;
+  border-bottom: medium #4c7af1 solid;
+}
+
+.health-bar > * + * {
+  margin-left: 2px;
+}
+
+.health-bar__item {
+  float: left;
+  width: .4rem;
+  height: .8rem;
+
+  background: #959595;
+  border-radius: 0.2rem;
+}
+
+.health-number {
+  margin-bottom: 0;
+}
+
+.next-to__item--ammo {
+  float: right;
+  display: inline-block;
+}
+
+.recharge {
+  background: #dfe668;
 }
 
 .ammo {
   text-align: right;
   display: block;
-  /*background: green;*/
+  background: turquoise;
 }
 
 .v-stack {
@@ -86,7 +139,7 @@ img {
   width: 50rem;
   margin: 0 auto;
 
-  /*background: green;*/
+  /*background: pink;*/
 }
 
 .elimination-stats {
@@ -95,4 +148,37 @@ img {
 
 .victim {
   color: red;
+}
+
+.big-text {
+  font: italic 400 1.5rem Helvetica;
+}
+
+weapon {
+  overflow: auto;
+  float: right;
+}
+
+.special-move {
+  float: right;
+}
+
+.weapon {
+  float: right;
+  height: 4rem;
+}
+
+.special-move__icon {
+  float: right;
+  height: 4rem;
+}
+
+.special-move__key {
+  float: right;
+  height: 4rem;
+}
+
+.key-binding {
+  font-style: italic;;
+  text-align: center;
 }
