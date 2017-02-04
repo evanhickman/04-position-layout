@@ -31,7 +31,7 @@ img {
   background: url('https://i.ytimg.com/vi/O161-WNZBP4/maxresdefault.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, .85);
 }
 
 /*COMPONENTS*/
@@ -50,8 +50,9 @@ img {
 .spread__left {
   display: inline-block;
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 3rem;
+  left: 4rem;
+  transform: rotate(-5deg);
 
   /*background: blue;*/
 }
@@ -59,11 +60,12 @@ img {
 .spread__right {
   display: inline-block;
   position: fixed;
-  bottom: 2.5rem;
-  right: 2rem;
-  padding: 0;
+  bottom: 3rem;
+  right: 4rem;
+  padding-top: 0;
+  transform: rotate(5deg);
 
-  /*background: green;*/
+  background: green;
 }
 
 .next-to {
@@ -77,8 +79,8 @@ img {
 
 .avatar {
   display: inline-block;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 6rem;
 }
 
 .next-to__item--health {
@@ -94,9 +96,10 @@ img {
   padding-bottom: 0.3rem;
   padding-right: 0.3rem;
   margin-top: 0.5rem;
+  transform: skewX(-20deg);
 
   border-right: medium rgba(76,122,241, .65) solid;
-  border-bottom: medium rgba(76,122,241, .65) solid;
+  border-bottom: thin rgba(76,122,241, .65) solid;
 }
 
 .health-bar > * + * {
@@ -107,8 +110,9 @@ img {
   float: left;
   width: .5rem;
   height: .8rem;
+  transform: skew(-20deg);
 
-  background: rgba(255, 255, 255, .65);
+  background: rgba(255, 255, 255, .75);
   border-radius: 0.2rem;
 }
 
@@ -126,12 +130,12 @@ img {
 }
 
 .ammo {
-  display: inline-block;
-  float: right;
-  position: fixed;
-  right: 4rem;
-  bottom: 6rem;
-  /*background: turquoise;*/
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+
+
+  background: turquoise;
   text-align: right;
 }
 
@@ -168,19 +172,21 @@ img {
   opacity: .8;
   text-align: center;
 
-  /*background:black;*/
+  background:black;
 }
 
 .weapon {
   display: inline-block;
   opacity: .8;
+  transform: skewX(-10deg);
 
-  /*background: orange;*/
+  background: orange;
 }
 
 .weapon-icon {
-  height: 4rem;
-  transform: skewX(-10deg);
+  height: 3rem;
+
+  border-right: medium rgba(76,122,241, .65) solid;
 }
 
 .special-move__icon {
@@ -188,20 +194,17 @@ img {
   margin: 0;
   padding: 0;
   margin-left: .5rem;
-  height: 4rem;
-  transform: skewX(-10deg);
+  height: 3rem;
+  transform: skewX(-20deg);
 
   border-radius: 0.3rem;
 }
 
-.key-binding {
-  display: inline-block;
-  position: fixed;
-  bottom: 1rem;
-  margin: 0;
+.key {
+  background: pink;
+}
 
-  border-radius: 0.2rem;
-  /*background: red;*/
+.key-binding {
 }
 
 .slash {
