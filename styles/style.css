@@ -31,7 +31,7 @@ img {
   background: url('https://i.ytimg.com/vi/O161-WNZBP4/maxresdefault.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgba(255, 255, 255, .65);
 }
 
 /*COMPONENTS*/
@@ -44,7 +44,7 @@ img {
   bottom: 2rem;
   padding: 0 2rem;
 
-  background: red;
+  /*background: red;*/
 }
 
 .spread__left {
@@ -59,10 +59,11 @@ img {
 .spread__right {
   display: inline-block;
   position: fixed;
-  bottom: 2rem;
+  bottom: 2.5rem;
   right: 2rem;
+  padding: 0;
 
-  background: green;
+  /*background: green;*/
 }
 
 .next-to {
@@ -94,8 +95,8 @@ img {
   padding-right: 0.3rem;
   margin-top: 0.5rem;
 
-  border-right: medium #4c7af1 solid;
-  border-bottom: medium #4c7af1 solid;
+  border-right: medium rgba(76,122,241, .65) solid;
+  border-bottom: medium rgba(76,122,241, .65) solid;
 }
 
 .health-bar > * + * {
@@ -104,10 +105,10 @@ img {
 
 .health-bar__item {
   float: left;
-  width: .4rem;
+  width: .5rem;
   height: .8rem;
 
-  background: #959595;
+  background: rgba(255, 255, 255, .65);
   border-radius: 0.2rem;
 }
 
@@ -121,13 +122,17 @@ img {
 }
 
 .recharge {
-  background: #dfe668;
+  background: rgba(255, 255, 51, .65);
 }
 
 .ammo {
+  display: inline-block;
+  float: right;
+  position: fixed;
+  right: 4rem;
+  bottom: 6rem;
+  /*background: turquoise;*/
   text-align: right;
-  display: block;
-  background: turquoise;
 }
 
 .v-stack {
@@ -154,31 +159,55 @@ img {
   font: italic 400 1.5rem Helvetica;
 }
 
-weapon {
-  overflow: auto;
-  float: right;
+.small-text {
+  font: italic 300 .8rem Helvetica;
 }
 
 .special-move {
-  float: right;
+  display: inline-block;
+  opacity: .8;
+  text-align: center;
+
+  /*background:black;*/
 }
 
 .weapon {
-  float: right;
+  display: inline-block;
+  opacity: .8;
+
+  /*background: orange;*/
+}
+
+.weapon-icon {
   height: 4rem;
+  transform: skewX(-10deg);
 }
 
 .special-move__icon {
-  float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: .5rem;
   height: 4rem;
-}
+  transform: skewX(-10deg);
 
-.special-move__key {
-  float: right;
-  height: 4rem;
+  border-radius: 0.3rem;
 }
 
 .key-binding {
-  font-style: italic;;
-  text-align: center;
+  display: inline-block;
+  position: fixed;
+  bottom: 1rem;
+  margin: 0;
+
+  border-radius: 0.2rem;
+  /*background: red;*/
+}
+
+.slash {
+  color: rgba(76,122,241, .65);
+}
+
+.elimination-skull {
+  opacity: .8;
 }
