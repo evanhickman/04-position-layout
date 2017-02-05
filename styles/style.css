@@ -62,10 +62,24 @@ img {
   position: fixed;
   bottom: 3rem;
   right: 4rem;
-  padding-top: 0;
+  padding: 0;
   transform: rotate(5deg);
 
-  background: green;
+  /*background: green;*/
+}
+
+.spread__right-top {
+  margin: 0;
+
+  /*background: blue;*/
+}
+
+.spread__right-bottom {
+  margin: 0;
+  /*position: fixed;*/
+  /*top: 0;*/
+
+  /*background: yellow;*/
 }
 
 .next-to {
@@ -99,7 +113,7 @@ img {
   transform: skewX(-20deg);
 
   border-right: medium rgba(76,122,241, .65) solid;
-  border-bottom: thin rgba(76,122,241, .65) solid;
+  border-bottom: thin rgba(255, 255, 255, .75) solid;
 }
 
 .health-bar > * + * {
@@ -135,7 +149,7 @@ img {
   margin-bottom: 0.5rem;
 
 
-  background: turquoise;
+  /*background: turquoise;*/
   text-align: right;
 }
 
@@ -152,11 +166,14 @@ img {
 }
 
 .elimination-stats {
-  font-weight: bold;
+  font-weight: 800;
+  -webkit-text-stroke-width: .03rem;
+  -webkit-text-stroke-color: rgba(167,167,165, 0.65);
+
 }
 
 .victim {
-  color: red;
+  color: rgba(255, 0, 0, 0.65);
 }
 
 .big-text {
@@ -172,7 +189,7 @@ img {
   opacity: .8;
   text-align: center;
 
-  background:black;
+  /*background:black;*/
 }
 
 .weapon {
@@ -180,11 +197,12 @@ img {
   opacity: .8;
   transform: skewX(-10deg);
 
-  background: orange;
+  /*background: orange;*/
 }
 
 .weapon-icon {
   height: 3rem;
+  margin-bottom: 1rem;
 
   border-right: medium rgba(76,122,241, .65) solid;
 }
@@ -201,14 +219,14 @@ img {
 }
 
 .key {
-  background: pink;
+  /*background: pink;*/
 }
 
 .key-binding {
 }
 
 .slash {
-  color: rgba(76,122,241, .65);
+  color: rgb(76,122,241);
 }
 
 .elimination-skull {
