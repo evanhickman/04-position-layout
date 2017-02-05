@@ -38,11 +38,6 @@ img {
 
 .spread {
   display: inline-block;
-  overflow: auto;
-  width: 100vw;
-  position: fixed;
-  bottom: 2rem;
-  padding: 0 2rem;
 
   /*background: red;*/
 }
@@ -51,7 +46,8 @@ img {
   display: inline-block;
   position: fixed;
   bottom: 3rem;
-  left: 4rem;
+  left: 3rem;
+  padding: 0 2rem;
   transform: rotate(-5deg);
 
   /*background: blue;*/
@@ -83,7 +79,7 @@ img {
 }
 
 .next-to {
-  overflow: auto;
+  /*overflow: auto;*/
 }
 
 .next-to__item {
@@ -166,6 +162,7 @@ img {
 }
 
 .elimination-stats {
+  font-size: 1.4rem;
   font-weight: 800;
   -webkit-text-stroke-width: .03rem;
   -webkit-text-stroke-color: rgba(167,167,165, 0.65);
@@ -231,4 +228,47 @@ img {
 
 .elimination-skull {
   opacity: .8;
+  margin-bottom: 3rem;
+
+  /*background: red;*/
+}
+
+.super-move {
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  color: #fff;
+}
+
+.super-move__percentage {
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 6rem;
+  /*text-align: center;*/
+
+  /*background: red;*/
+}
+
+.super-move__outer-circle {
+  padding: 0.3rem;
+
+  /*background: red;*/
+  border: yellow dotted;
+  border-width: 0.4rem;
+  border-radius: 50%;
+}
+
+.super-move__circle {
+  height: 6rem;
+  width: 6rem;
+  /*background: rgba(255, 255, 255, 0.5);*/
+  border: medium yellow dashed;
+  border-radius: 50%;
+}
+
+.super-move__key {
+  color: red;
 }
