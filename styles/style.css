@@ -228,14 +228,13 @@ img {
 
 .elimination-skull {
   opacity: .8;
-  margin-bottom: 3rem;
 
   /*background: red;*/
 }
 
 .super-move {
   position: fixed;
-  top: 10rem;
+  top: 8rem;
   left: 50%;
   transform: translate(-50%, 0);
 
@@ -245,13 +244,13 @@ img {
 .super-move__percentage {
   display: inline;
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: medium;
   text-align: center;
-  letter-spacing: -0.3rem;
+  letter-spacing: -0.1rem;
   font-style: italic;
   vertical-align: middle;
   line-height: 6rem;
-  /*text-align: center;*/
+  text-align: center;
 
   /*background: red;*/
 }
@@ -261,7 +260,7 @@ img {
 
   /*background: red;*/
   border: rgba(255, 255, 0, 0.7) dotted;
-  border-width: 0.4rem;
+  border-width: 0.5rem;
   border-radius: 50%;
 }
 
@@ -274,9 +273,18 @@ img {
 }
 
 .super-move__key {
-  color: red;
+  color: #fff;
 }
 
 .small-percent {
   font-size: 0.8rem;
+}
+
+.fa-asterisk {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2rem;
+  padding: 0.2rem;
+  /*border-radius: 50%;*/
+  /*border: thin #fff solid;*/
 }
