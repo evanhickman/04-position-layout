@@ -244,7 +244,11 @@ img {
 
 .super-move__percentage {
   display: inline;
+  font-size: 2rem;
+  font-weight: lighter;
   text-align: center;
+  letter-spacing: -0.3rem;
+  font-style: italic;
   vertical-align: middle;
   line-height: 6rem;
   /*text-align: center;*/
@@ -256,7 +260,7 @@ img {
   padding: 0.3rem;
 
   /*background: red;*/
-  border: yellow dotted;
+  border: rgba(255, 255, 0, 0.7) dotted;
   border-width: 0.4rem;
   border-radius: 50%;
 }
@@ -265,10 +269,14 @@ img {
   height: 6rem;
   width: 6rem;
   /*background: rgba(255, 255, 255, 0.5);*/
-  border: medium yellow dashed;
+  border: medium rgba(255, 255, 0, 0.7) dashed;
   border-radius: 50%;
 }
 
 .super-move__key {
   color: red;
+}
+
+.small-percent {
+  font-size: 0.8rem;
 }
