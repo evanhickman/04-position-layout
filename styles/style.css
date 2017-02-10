@@ -1,7 +1,4 @@
 /*RESETS*/
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 * {
   box-sizing: border-box;
 }
@@ -9,7 +6,7 @@ body {
   margin: 0;
 
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   /*background: red;*/
 }
 
@@ -20,4 +17,274 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+/* CONTENT */
+
+.section {
+  /*padding: 1rem;*/
+}
+
+.section__bg-pic {
+  height: 100vh;
+  width: 100vw;
+  background: url('https://i.ytimg.com/vi/O161-WNZBP4/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, .85);
+}
+
+/*COMPONENTS*/
+
+.spread {
+  display: inline-block;
+
+  /*background: red;*/
+}
+
+.spread__left {
+  display: inline-block;
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  padding: 0 2rem;
+  transform: rotate(-5deg);
+
+  /*background: blue;*/
+}
+
+.spread__right {
+  display: inline-block;
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  padding: 0;
+  transform: rotate(5deg);
+
+  /*background: green;*/
+}
+
+.spread__right-top {
+  margin: 0;
+
+  /*background: blue;*/
+}
+
+.spread__right-bottom {
+  margin: 0;
+  /*position: fixed;*/
+  /*top: 0;*/
+
+  /*background: yellow;*/
+}
+
+.next-to {
+  /*overflow: auto;*/
+}
+
+.next-to__item {
+  display: inline-block;
+  /*background: yellow;*/
+}
+
+.avatar {
+  display: inline-block;
+  width: 5rem;
+  height: 6rem;
+}
+
+.next-to__item--health {
+  display: inline-block;
+  margin-left: 0.3rem;
+  /*margin-top: 4rem;*/
+
+  /*background: blue;*/
+}
+
+.health-bar {
+  overflow: auto;
+  padding-bottom: 0.3rem;
+  padding-right: 0.3rem;
+  margin-top: 0.5rem;
+  transform: skewX(-20deg);
+
+  border-right: medium rgba(76,122,241, .65) solid;
+  border-bottom: thin rgba(255, 255, 255, .75) solid;
+}
+
+.health-bar > * + * {
+  margin-left: 2px;
+}
+
+.health-bar__item {
+  float: left;
+  width: .5rem;
+  height: .8rem;
+  transform: skew(-20deg);
+
+  background: rgba(255, 255, 255, .75);
+  border-radius: 0.2rem;
+}
+
+.health-number {
+  margin-bottom: 0;
+}
+
+.next-to__item--ammo {
+  float: right;
+  display: inline-block;
+}
+
+.recharge {
+  background: rgba(255, 255, 51, .65);
+}
+
+.ammo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+
+
+  /*background: turquoise;*/
+  text-align: right;
+}
+
+.v-stack {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  margin: 0 auto;
+
+  /*background: pink;*/
+}
+
+.elimination-stats {
+  font-size: 1.4rem;
+  font-weight: 800;
+  -webkit-text-stroke-width: .03rem;
+  -webkit-text-stroke-color: rgba(167,167,165, 0.65);
+
+}
+
+.victim {
+  color: rgba(255, 0, 0, 0.65);
+}
+
+.big-text {
+  font: italic 400 1.5rem Helvetica;
+}
+
+.small-text {
+  font: italic 300 .8rem Helvetica;
+}
+
+.special-move {
+  display: inline-block;
+  opacity: .8;
+  text-align: center;
+
+  /*background:black;*/
+}
+
+.weapon {
+  display: inline-block;
+  opacity: .8;
+  transform: skewX(-10deg);
+
+  /*background: orange;*/
+}
+
+.weapon-icon {
+  height: 3rem;
+  margin-bottom: 1rem;
+
+  border-right: medium rgba(76,122,241, .65) solid;
+}
+
+.special-move__icon {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: .5rem;
+  height: 3rem;
+  transform: skewX(-20deg);
+
+  border-radius: 0.3rem;
+}
+
+.key {
+  /*background: pink;*/
+}
+
+.key-binding {
+}
+
+.slash {
+  color: rgb(76,122,241);
+}
+
+.elimination-skull {
+  opacity: .8;
+
+  /*background: red;*/
+}
+
+.super-move {
+  position: fixed;
+  top: 8rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  color: #fff;
+}
+
+.super-move__percentage {
+  display: inline;
+  font-size: 2rem;
+  font-weight: medium;
+  text-align: center;
+  letter-spacing: -0.1rem;
+  font-style: italic;
+  vertical-align: middle;
+  line-height: 6rem;
+  text-align: center;
+
+  /*background: red;*/
+}
+
+.super-move__outer-circle {
+  padding: 0.3rem;
+
+  /*background: red;*/
+  border: rgba(255, 255, 0, 0.7) dotted;
+  border-width: 0.5rem;
+  border-radius: 50%;
+}
+
+.super-move__circle {
+  height: 6rem;
+  width: 6rem;
+  /*background: rgba(255, 255, 255, 0.5);*/
+  border: medium rgba(255, 255, 0, 0.7) dashed;
+  border-radius: 50%;
+}
+
+.super-move__key {
+  color: #fff;
+}
+
+.small-percent {
+  font-size: 0.8rem;
+}
+
+.fa-asterisk {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2rem;
+  padding: 0.2rem;
+  /*border-radius: 50%;*/
+  /*border: thin #fff solid;*/
 }

@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Overwatch HUD</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+</head>
+
+<body>
+  <main class="section section__bg-pic">
+
+    <!-- HUD ICONS
+      ////////////////// -->
+
+    <div class="spread">
+      <div class="spread__left">
+        <div class="next-to">
+          <div class="next-to__item">
+            <img src="https://hydra-media.cursecdn.com/overwatch.gamepedia.com/0/04/Genji_portrait.png?version=1afaa2a44b70c57a6c997773e33a13ca" alt="Genji avatar" class="avatar">
+          </div>
+          <div class="next-to__item next-to__item--health">
+            <p class="health-number"><span class="big-text">430</span><span class="small-text"><span class="slash">/</span>500</span>
+            </p>
+            <p class="health-bar">
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item"></span>
+              <span class="health-bar__item recharge"></span>
+              <span class="health-bar__item recharge"></span>
+              <span class="health-bar__item recharge"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="spread__right">
+        <div class="spread__right-top">
+          <div class="ammo-spot">
+            <p class="ammo"><span class="big-text">99</span><span class="small-text"><span class="slash">/</span>100</span>
+          </div>
+        </div>
+        <div class="spread__right-bottom">
+          <div class="next-to">
+            <div class="next-to__item next-to__item--ammo">
+              <div class="special-move">
+                <img src="./images/dragonblade (1).png" alt="special move icon" class="special-move__icon">
+                <div class="key">
+                  <span><i class="fa fa-arrow-circle-o-right key-binding" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="special-move">
+                <img src="./images/deflect (1).png" alt="special move icon" class="special-move__icon">
+                <div class="key">
+                  <span><i class="fa fa-arrow-circle-o-down key-binding" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="weapon">
+                <img src="https://hydra-media.cursecdn.com/overwatch.gamepedia.com/thumb/2/28/Ability-genji1.png/200px-Ability-genji1.png?version=935048c55ed46687637670fa87226c4d" alt="nic derpin" class="weapon-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELIMINATION STATS
+        //////////////////////// -->
+
+    <div class="v-stack">
+      <div class="elimination-image">
+        <img src="./images/ow skull copy.png" alt="elimiation skull" class="elimination-skull" height="70rem" width="70rem">
+      </div>
+      <p class="elimination-stats">
+        <em>ELIMINATED <span class="victim">MR BEAN</span></em>
+      </p>
+      <p class="elimination-stats">
+        <em>ELIMINATED <span class="victim">GARFIELD</span></em>
+      </p>
+    </div>
+
+    <!-- SUPER MOVE STATUS
+    //////////////////////// -->
+
+    <div class="v-stack">
+      <div class="super-move">
+        <div class="super-move__outer-circle">
+          <div class="super-move__circle">
+            <p class="super-move__percentage"><span class="big-percent">100<span><span class="small-percent">%</span></p>
+          </div>
+        </div>
+
+        <div class="super-move__key">
+          <p><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
 </html>
